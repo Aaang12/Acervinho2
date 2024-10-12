@@ -7,23 +7,69 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #e50914;
-    padding: 10px;
-    text-align: center;
+    padding: 10px 20px;
 }
 
-h1 {
+.logo h1 {
     margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 main {
     padding: 20px;
 }
 
+h2 {
+    margin-bottom: 20px;
+}
+
 .course-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
+}
+
+.course-grid div {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.course-grid div:hover {
+    transform: scale(1.05);
+}
+
+.course-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
 }
 
 .course-grid div {
